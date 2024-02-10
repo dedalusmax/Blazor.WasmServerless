@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.WebAssembly.Standalone", "Blazor.WebAssembly.Standalone\Blazor.WebAssembly.Standalone.csproj", "{26517821-C6A8-474D-9DC8-2C1DFCEE6CB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.Functions.Serverless", "Azure.Functions.Serverless\Azure.Functions.Serverless.csproj", "{5A7EB147-F108-42BD-AC28-BAB8D9F62DC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{26517821-C6A8-474D-9DC8-2C1DFCEE6CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26517821-C6A8-474D-9DC8-2C1DFCEE6CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26517821-C6A8-474D-9DC8-2C1DFCEE6CB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A7EB147-F108-42BD-AC28-BAB8D9F62DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A7EB147-F108-42BD-AC28-BAB8D9F62DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A7EB147-F108-42BD-AC28-BAB8D9F62DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A7EB147-F108-42BD-AC28-BAB8D9F62DC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
