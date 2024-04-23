@@ -6,6 +6,8 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.Configuration["AzureFunctionsEndpoint"]) ?? new Uri(builder.HostEnvironment.BaseAddress) });
+var functionUrl = builder.HostEnvironment.IsDevelopment() ? builder.Configuration["AzureFunctionsEndpoint"] : builder.HostEnvironment.BaseAddress;
+
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(functionUrl) });
 
 await builder.Build().RunAsync();
